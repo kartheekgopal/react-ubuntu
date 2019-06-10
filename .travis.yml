@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker run build -t kartheekgopal/react-ubuntu -f Dockerfile.dev .
+  - docker build -t kartheekgopal/react-ubuntu -f Dockerfile.dev .
 
 script:
   - docker run kartheekgopal/react npm run test -- --coverage
