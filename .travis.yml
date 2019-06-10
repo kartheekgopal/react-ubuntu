@@ -6,4 +6,4 @@ before_install:
   - docker build -t kartheekgopal/react-ubuntu -f Dockerfile.dev .
 
 script:
-  - docker run kartheekgopal/react npm run test -- --coverage
+  - docker run kartheekgopal/react-ubuntu npm run test -- --coverage
